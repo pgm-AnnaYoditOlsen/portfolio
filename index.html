@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Portfolio Anna-Yodit Olsen</title>
@@ -13,35 +16,48 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#about">Over mij</a>
+                    <a class="underline-animation" href="#about">Over mij</a>
                 </li>
                 <li>
-                    <a href="#skills">Skills</a>
+                    <a class="underline-animation" href="#skills">Skills</a>
                 </li>
                 <li>
-                    <a href="#project">Projecten</a>
+                    <a class="underline-animation" href="#project">Projecten</a>
                 </li>
                 <li>
-                    <a href="#service">Diensten</a>
+                    <a class="underline-animation" href="#service">Diensten</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a class="underline-animation" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <article class="intro">
-            <div class="img">
-
+        <article class="intro ">
+            <div class="bg">
+                <img src="images/computer.jpg" alt="Computer">
             </div>
-            <div class="intro__name">
-                <h1 class="name">Anna-Yodit Olsen</h1>
-                <p>Front end developer</p>
+            <div class="max-width intro">
+                <div class="transparent">
+
+                </div>
+                <div class="intro__name">
+                    <div>
+                        <h1 class="name">Anna-Yodit</h1>
+                        <h1 class="name">Olsen</h1>
+                    </div>
+                    <p>Front end developer</p>
+                    <div class="socials">
+                        <a href="https://github.com/pgm-AnnaYoditOlsen" target="_blank"><img class="github" src="images/github.png" alt="Github icon"></a>
+                        <a href="https://www.linkedin.com/in/anna-yodit-olsen-400b99250/" target="_blank"><img class="github" src="images/linkedin.svg" alt="Linkedin icon"></a>
+                    </div>
+                </div>
+    
             </div>
         </article>
 
-        <article id="about" class="about">
+        <article id="about" class="about max-width">
             <div class="about__text">
                 <h2>Wie ben ik</h2>
                 <p>
@@ -59,7 +75,7 @@
             </div>
         </article>
 
-        <article id="skills" class="skills">
+        <article id="skills" class="skills max-width">
             <div class="skills__title">
                 <h2>Skills</h2>
                 <span>Skills</span>
@@ -72,7 +88,7 @@
             </div>
         </article>
 
-        <article id="project" class="article-project">
+        <article id="project" class="article-project max-width">
             <div class="project_title">
                 <h2 class="sharp">Projecten</h2>
                 <p class="blur">Projecten</p>
@@ -87,40 +103,42 @@
             </div>
         </article>
 
-        <article id="service" class="service">
-            <h2>Diensten</h2>
-            <div class="service__text">
-                <div>
-                    <div class="text__title">
-                        <img src="images/magicpen.svg" alt="Pen icon">
-                        <strong>UI/UX Design</strong>
+        <section class="background">
+            <article id="service" class="service max-width">
+                <h2>Diensten</h2>
+                <div class="service__text">
+                    <div class="animate__fadeInUp">
+                        <div class="text__title">
+                            <img src="images/magicpen.svg" alt="Pen icon">
+                            <strong>UI/UX Design</strong>
+                        </div>
+                        <p>
+                            Ontwerpen met de beleving van de gebruikers in gedachten. Creëren van interfaces die de gebruikservaring verbetert en er profesioneel uitzien.
+                        </p>
                     </div>
-                    <p>
-                        Ontwerpen met de beleving van de gebruikers in gedachten. Creëren van interfaces die de gebruikservaring verbetert en er profesioneel uitzien.
-                    </p>
-                </div>
-                <div>
-                    <div class="text__title">
-                        <img src="images/code.svg" alt="Code icon">
-                        <strong>Front end developer</strong>
+                    <div>
+                        <div class="text__title">
+                            <img src="images/code.svg" alt="Code icon">
+                            <strong>Front end developer</strong>
+                        </div>
+                        <p>
+                            Bouwen van aantrekkelijke, gebruiksvriendelijke websites die geschikt zijn voor alle apparaten. Een goede website moet er niet alleen mooi uit zien. Ik breng een structurele verbetering aan uw website.
+                        </p>
                     </div>
-                    <p>
-                        Bouwen van aantrekkelijke, gebruiksvriendelijke websites die geschikt zijn voor alle apparaten. Een goede website moet er niet alleen mooi uit zien. Ik breng een structurele verbetering aan uw website.
-                    </p>
-                </div>
-                <div>
-                    <div class="text__title">
-                        <img src="images/diagram.svg" alt="Diagram icon">
-                        <strong>SEO Marketing</strong>
+                    <div>
+                        <div class="text__title">
+                            <img src="images/diagram.svg" alt="Diagram icon">
+                            <strong>SEO Marketing</strong>
+                        </div>
+                        <p>
+                            Wil je jouw online zichtbaarheid vergroten en meer potentiële klanten bereiken? SEO-marketing die speciaal voor jouw zijn ontworpen brengt jouw website naar de top van de zoekresultaten.
+                        </p>
                     </div>
-                    <p>
-                        Wil je jouw online zichtbaarheid vergroten en meer potentiële klanten bereiken? SEO-marketing die speciaal voor jouw zijn ontworpen brengt jouw website naar de top van de zoekresultaten.
-                    </p>
                 </div>
-            </div>
-        </article>
+            </article>
+        </section>
 
-        <article id="contact" class="contact">
+        <article id="contact" class="contact max-width">
             <h2>Contact</h2>
             <div class="contect__content">
                 <div class="contact__text">
@@ -148,6 +166,7 @@
                 </div>
             </div>
         </article>
+        <a href="#top">Naar boven</a>
     </main>
 </body>
 </html>

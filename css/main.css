@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
@@ -16,13 +18,10 @@
 }
 
 body {
-    background-color: hsl(0, 0%, 10%);
+    background-color: #0d0d0d;
     color: hsl(0, 0%, 100%);
     font-family: 'Open Sans';
     font-size: 16px;
-    max-width: 1600px;
-    margin: 0 auto;
-    
 }
 
 li {
@@ -34,12 +33,28 @@ a {
     color: white;
 }
 
+.img {
+    width: 500px;
+    height: 500px;
+    background-color: hsl(0, 0%, 50%);
+}
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 5%);
+    padding-bottom: 20px;
+}
+
 nav ul {
     font-size: 20px;
     text-transform: uppercase;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 h1 {
@@ -52,22 +67,63 @@ h2 {
     text-transform: uppercase;
 }
 
-article {
-    margin-top: 100px;
-    margin-bottom: 150px;
+.max-width {
+    max-width: 1400px;
+    margin: 100px auto 150px auto;
+}
+
+.underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* intro */
 
 .intro {
     display: flex;
-    justify-content: space-evenly;
+    gap: 150px;
+    align-items: center;
 }
 
-.img {
-    background-color: rgb(163, 163, 163);
+.transparent {
     width: 500px;
     height: 500px;
+    background-color: hsl(0, 0%, 0%);
+    opacity: 0;
+}
+
+.bg {
+    margin-top: -70px;
+    height: 48vw;
+    width: 98vw;
+    object-fit: cover;
+    background: black;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+}
+
+.bg img {
+    object-fit: cover;
+    opacity: 0.5;
 }
 
 .intro__name {
@@ -76,13 +132,36 @@ article {
 
 .name {
     font-size: 90px;
-    margin-bottom: -10px;
+    margin-bottom: -30px;
 }
 
 .intro__name p {
     font-size: 30px;
     text-transform: uppercase;
+    margin-top: 40px;
 }
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.socials a:first-child {
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+.socials a:last-child {
+    width: 30px;
+    aspect-ratio: 1/1;
+}
+
+.socials a:hover {
+    opacity: 50%;
+}
+
 
 /* about */
 
@@ -170,7 +249,7 @@ span {
 .blur {
     text-transform: uppercase;
     font-weight: bold;
-    color: #5C5C5C;
+    color: hsl(0, 0%, 36%);
     font-size: 150px;
     letter-spacing: 15px;
     filter: blur(12px);
@@ -190,10 +269,16 @@ span {
 }
 
 /* service */
+.background {
+    background-color: hsl(0, 0%, 10%);
+    
+}
+
 .service {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 120px;
 }
 
 .service h2 {
@@ -217,7 +302,7 @@ span {
 }
 
 .text__title {
-    background: #B5B5B5;
+    background: hsl(0, 0%, 45%);
     color: black;
     padding: 20px;
     margin-bottom: -15px;
