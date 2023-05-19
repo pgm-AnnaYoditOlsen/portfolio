@@ -42,13 +42,31 @@ a {
 /* header */
 
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    background-color: hsl(0, 0%, 5%);
+    background-color: hsla(0, 0%, 0%, 0);
     padding-bottom: 20px;
     z-index: 2;
 }
+
+.header.sticky {
+    position: fixed;
+    background-color: hsl(0, 0%, 5%);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    backdrop-filter: blur(10px);
+}
+
+/*
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}*/
 
 nav ul {
     font-size: 20px;
