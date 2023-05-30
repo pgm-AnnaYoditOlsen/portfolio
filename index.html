@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Portfolio Anna-Yodit Olsen</title>
@@ -16,19 +14,19 @@
         <nav>
             <ul>
                 <li>
-                    <a class="underline-animation" href="#about">Over mij</a>
+                    <a class="underline-animation nav_link" href="#about">Over mij</a>
                 </li>
                 <li>
-                    <a class="underline-animation" href="#skills">Skills</a>
+                    <a class="underline-animation nav_link" href="#skills">Skills</a>
                 </li>
                 <li>
-                    <a class="underline-animation" href="#project">Projecten</a>
+                    <a class="underline-animation nav_link" href="#project">Projecten</a>
                 </li>
                 <li>
-                    <a class="underline-animation" href="#service">Diensten</a>
+                    <a class="underline-animation nav_link" href="#service">Diensten</a>
                 </li>
                 <li>
-                    <a class="underline-animation" href="#contact">Contact</a>
+                    <a class="underline-animation nav_link" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -53,81 +51,121 @@
                         <a href="https://www.linkedin.com/in/anna-yodit-olsen-400b99250/" target="_blank"><img class="github" src="images/linkedin.svg" alt="Linkedin icon"></a>
                     </div>
                 </div>
-    
             </div>
         </article>
 
         <article id="about" class="about max-width">
             <div class="about__text">
-                <h2>Wie ben ik</h2>
+                <h2 class="spin">
+                    <span style="--i:1">W</span> 
+                    <span style="--i:2">i</span> 
+                    <span style="--i:3">e</span> 
+                    <span> </span> 
+                    <span style="--i:4">b</span> 
+                    <span style="--i:5">e</span> 
+                    <span style="--i:6">n</span> 
+                    <span> </span> 
+                    <span style="--i:7">i</span>
+                    <span style="--i:8">k</span>
+                    <span style="--i:9">!</span>
+                </h2>
                 <p>
                     Ik ben Anna-Yodit Olsen, een front-end developer gevestigd in België. Ik vind het belangrijk om websites te maken met een sterke visuele aantrekkingskracht.
                 </p>
                 <p>
                     Met mijn kennis van HTML, CSS en JavaScript creëer ik een op maat gemaakte website die perfect bij uw visie past. 
                 </p>
-                <a href="#project">
+                <a href="#project" class="underline">
                     Bekijk voorbeelden van mijn werk.
                 </a>
             </div>
-            <div class="img">
-                <img src="images/Anna-Yodit.jpg" alt="Profiel foto Anna-Yodit Olsen">
+            <div class="about__img">
+                <div class="image-wrapper">
+                    <img src="images/Anna-Yodit.jpg" alt="Profiel foto Anna-Yodit Olsen">
+                </div>
             </div>
         </article>
 
-        <article id="skills" class="skills max-width">
-            <div class="skills__title">
-                <h2>Skills</h2>
-                <span>Skills</span>
-            </div>
-            <div class="skills__image">
-                <img src="images/html.svg" alt="html icon">
-                <img src="images/css.svg" alt="css icon">
-                <img src="images/js.svg" alt="javascript icon">
-                <img src="images/figma.svg" alt="figma icon">
-            </div>
-        </article>
+        <section class="background">        
+            <article id="skills" class="skills max-width">
+                <div class="skills__title">
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills__image animation-element bounce-up">
+                    <div class="container-img">
+                        <img src="images/html.svg" alt="html icon">
+                        <div class="middle">
+                            <div class="text">HTML</div>
+                        </div>
+                    </div>
+                    <div class="container-img">
+                        <img src="images/css.svg" alt="css icon">
+                        <div class="middle">
+                            <div class="text">CSS</div>
+                        </div>
+                    </div>
+                    <div class="container-img">
+                        <img src="images/js.svg" alt="javascript icon">
+                        <div class="middle">
+                            <div class="text">JavaScript</div>
+                        </div>
+                    </div>
+                    <div class="container-img">
+                        <img src="images/figma.svg" alt="figma icon">
+                        <div class="middle">
+                            <div class="text">Figma</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
 
         <article id="project" class="article-project max-width">
             <div class="project_title">
                 <h2 class="sharp">Projecten</h2>
-                <p class="blur">Projecten</p>
+                <span class="blur">Projecten</span>
             </div>
-            <div class="projects">
-                <div class="img">
+            <div class="projects animation-element bounce-up">
 
-                </div>
-                <p class="project__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at mi vitae lectus commodo placerat non non metus. Suspendisse non rutrum nisl, at commodo sapien.
-                </p>
             </div>
         </article>
 
         <section class="background">
-            <article id="service" class="service max-width">
-                <h2>Diensten</h2>
+            <article id="service" class="service-content max-width">
+                <div class="skills__title">
+                    <h2>Diensten</h2>
+                </div>
                 <div class="service__text">
-                    <div class="animate__fadeInUp">
+                    <div class="service animation-element bounce-up">
                         <div class="text__title">
-                            <img src="images/magicpen.svg" alt="Pen icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.01 8.98994L15.01 5.98994M1 23C1.83 23.83 5.67003 21.3299 6.50003 20.4999L19.5 7.49994C20.33 6.66994 20.33 5.32994 19.5 4.49994C18.67 3.66994 17.33 3.66994 16.5 4.49994L3.50003 17.4999C2.67003 18.3299 0.17 22.17 1 23Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.5 2.44L10 2L9.56 3.5L10 5L8.5 4.56L7 5L7.44 3.5L7 2L8.5 2.44ZM4.5 8.44L6 8L5.56 9.5L6 11L4.5 10.56L3 11L3.44 9.5L3 8L4.5 8.44ZM19.5 13.44L21 13L20.56 14.5L21 16L19.5 15.56L18 16L18.44 14.5L18 13L19.5 13.44Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                             <strong>UI/UX Design</strong>
                         </div>
                         <p>
                             Ik creëer interfaces die de gebruikservaring verbeteren en er professioneel uitzien. Mijn ontwerpen worden gemaakt met de gebruikservaring in gedachten.
                         </p>
                     </div>
-                    <div>
+                    <div class="service animation-element bounce-up">
                         <div class="text__title">
-                            <img src="images/code.svg" alt="Code icon">
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 2L1 4L3 6M11 2L13 4L11 6" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 7L8 1" stroke="black" stroke-linecap="round"/>
+                            </svg>
                             <strong>Front end developer</strong>
                         </div>
                         <p>
                             Een goede website moet er niet alle mooi uitzien, maar ook een sterke structuur hebben. Ik specialiseer me in het bouwen van gebruiksvriendelijke websites die geschikt zijn voor alle apparaten.
                         </p>
                     </div>
-                    <div>
+                    <div class="service animation-element bounce-up">
                         <div class="text__title">
-                            <img src="images/diagram.svg" alt="Diagram icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2V19C2 20.66 3.34 22 5 22H22" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 17L9.59 11.64C10.35 10.76 11.7 10.7 12.52 11.53L13.47 12.48C14.29 13.3 15.64 13.25 16.4 12.37L21 7" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                             <strong>SEO Marketing</strong>
                         </div>
                         <p>
@@ -139,35 +177,50 @@
         </section>
 
         <article id="contact" class="contact max-width">
-            <h2>Contact</h2>
-            <div class="contect__content">
-                <div class="contact__text">
-                    <p>Wilt u samenwerken?</p>
+            <div class="project_title">
+                <h2 class="sharp">Contact</h2>
+                <span class="blur">Contact</span>
+            </div>
+            <div class="contect__content animation-element bounce-up">
+                <div data-aos="fade-right" class="contact__text">
+                    <p class="text_title">Wilt u samenwerken?</p>
                     <p>
                         Heeft u een idee, een project waar u hulp bij nodig heeft, of een vraag? Aarzel dan zeker niet om contact op te nemen.
                     </p>
+                    <div class="contact__detail">
+                        <div>
+                            <p>Stuur een mail</p>
+                            <a href = "mailto: abc@example.com">olseannayodit@gmail.com</a>
+                        </div>
+                        <div>
+                            <p>Of bel eens</p>
+                            <a href="tel:+32123456789">+324/ 23 45 67 89</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <form action="">
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" placeholder="Email">
-                        </div>
-                        <div>
-                            <label for="name">Naam</label>
-                            <input type="text" name="name" placeholder="Naam">
-                        </div>
-                        <div>
-                            <label for="message">Uw bericht</label>
-                            <textarea type="text" rows="5" name="message" placeholder="Bericht"></textarea>
-                        </div>
-                        <input class="button" type="submit" value="Verstuur">
-                    </form>
-                </div>
+                <form data-aos="fade-left" action="">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="name">Naam</label>
+                        <input type="text" name="name" placeholder="Naam">
+                    </div>
+                    <div>
+                        <label for="message">Uw bericht</label>
+                        <textarea type="text" rows="5" name="message" placeholder="Bericht"></textarea>
+                    </div>
+                    <input class="button" type="submit" value="Verstuur">
+                </form>
             </div>
         </article>
-        <a href="#top">Naar boven</a>
+        <a href="#top" class="to-top">
+            <img src="images/arrow-up.svg" alt="Pijl naar boven">
+        </a>
     </main>
+    <script src="data/projecten.js"></script>
+    <script src="js/projecten.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
