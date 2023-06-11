@@ -18,20 +18,20 @@ const PROJECTS = [
         image: "images/Scrauwen-Groen.png",
         title: "Schrauwen Groen",
         description: "Met HTML, CSS en JavaScript heb ik de website van Schrauwen Groen gemaakt.",
-        url: "https://pgmgent-atwork-1.github.io/opdracht-1-schrauwen-groen-Anna-Yodit/"
+        url: "https://github.com/pgmgent-atwork-1/opdracht-1-schrauwen-groen-Anna-Yodit"
     },
     {
         id: 4,
         image: "images/GentseFeesten.png",
         title: "Gentse Feesten",
         description: "Voor de website van de Gentse Feesten heb ik gebruik gemaakt van HTML, CSS en JavaScript.",
-        url: "https://pgmgent-atwork-1.github.io/opdracht-2-gentse-feesten-2022-Anna-Yodit/"
+        url: "https://github.com/pgmgent-atwork-1/opdracht-2-gentse-feesten-2022-Anna-Yodit"
     },
     {
         id: 5,
         image: "images/Studio-Boost.png",
         title: "Studio Boost",
         description: "Studio Boost werd gemaakt met Eleventy.",
-        url: ""
+        url: "https://github.com/pgmgent-ui-prototyping/studio-boost-pgm-AnnaYoditOlsen"
     },
 ]
